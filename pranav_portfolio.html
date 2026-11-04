@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pranav Bhalerao — cybersecurity, ethical hacking, and web development portfolio.">
+  <title>Pranav Bhalerao | Cybersecurity & Web Development</title>
+  <style>
+    :root {
+      --bg: #080d18; --panel: #111a2b; --text: #edf3ff;
+      --muted: #a7b4ca; --accent: #43e0b2; --line: #26344b;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+      color: var(--text); background: radial-gradient(circle at top right, #142b3a, var(--bg) 48%);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1080px, 90%); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 5; backdrop-filter: blur(14px);
+      background: #080d18dd; border-bottom: 1px solid var(--line);
+    }
+    .nav { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { font-weight: 800; letter-spacing: .08em; }
+    .brand span { color: var(--accent); }
+    nav { display: flex; flex-wrap: wrap; gap: 22px; }
+    nav a { color: var(--muted); font-size: .95rem; }
+    nav a:hover { color: var(--accent); }
+    .hero { padding: 105px 0 90px; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .16em; text-transform: uppercase; font-size: .8rem; }
+    h1 { font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.05; margin: 18px 0; max-width: 850px; }
+    h1 span { color: var(--accent); }
+    .intro { color: var(--muted); max-width: 650px; font-size: 1.1rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+    .btn { display: inline-block; padding: 12px 20px; border-radius: 9px; font-weight: 700; border: 1px solid var(--accent); }
+    .primary { background: var(--accent); color: #06120f; }
+    .secondary { color: var(--accent); }
+    section { padding: 65px 0; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0 0 18px; }
+    .muted { color: var(--muted); max-width: 760px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
+    .card { background: #111a2be8; border: 1px solid var(--line); border-radius: 14px; padding: 23px; }
+    .card h3 { margin: 0 0 8px; color: var(--accent); }
+    .card p { margin: 0; color: var(--muted); }
+    .notice { border-left: 3px solid var(--accent); padding: 12px 16px; background: #10202a; color: var(--muted); border-radius: 0 8px 8px 0; margin-top: 24px; }
+    footer { border-top: 1px solid var(--line); padding: 25px 0; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 720px) {
+      .nav { align-items: flex-start; flex-direction: column; padding: 15px 0; }
+      nav { gap: 15px; }
+      .hero { padding: 75px 0 60px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home">PRANAV<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="eyebrow">Cybersecurity • Ethical Learning • Web Development</div>
+      <h1>Building a safer <span>digital world.</span></h1>
+      <p class="intro">Hello, I'm Pranav Bhalerao. I'm interested in cybersecurity, ethical hacking, and creating useful websites and programs. I focus on learning and working with permission.</p>
+      <div class="actions">
+        <a class="btn primary" href="#skills">Explore my skills</a>
+        <a class="btn secondary" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section class="wrap" id="about">
+      <h2>About me</h2>
+      <p class="muted">I'm developing my skills in technology through hands-on projects and continuous learning. My goal is to understand how digital systems work, help make them more secure, and build reliable web experiences.</p>
+      <div class="notice">I only perform security testing on systems I own or have clear permission to test. I do not track people, access accounts, or collect private information without consent.</div>
+    </section>
+
+    <section class="wrap" id="skills">
+      <h2>What I'm learning</h2>
+      <p class="muted">A few areas I enjoy exploring:</p>
+      <div class="grid">
+        <article class="card"><h3>Web Development</h3><p>Building responsive websites with HTML, CSS, and JavaScript.</p></article>
+        <article class="card"><h3>Cybersecurity</h3><p>Learning online safety, secure practices, and defensive security basics.</p></article>
+        <article class="card"><h3>Programming</h3><p>Writing small programs and improving problem-solving skills.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="contact">
+      <h2>Contact</h2>
+      <p class="muted">For project or learning-related enquiries, add a dedicated professional email address here when you're ready to publish. Avoid posting your personal phone number or private details publicly.</p>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© 2026 Pranav Bhalerao. Built with HTML and CSS.</div></footer>
+</body>
+</html>
